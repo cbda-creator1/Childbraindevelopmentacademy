@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>Child Brain Development Academy</title>
+    <meta
+      name="title"
+      content="EduWeb - The Best Program to Enroll for Exchange"
+    />
+    <meta
+      name="description"
+      content="This is an education html template made by codewithsadee"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./images/myfavicon.png"
+      type="image/png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./images/logo-option.svg"
+            width="162"
+            height="50"
+            alt="CBDA logo"
+            class="logo-img"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#courses" class="navbar-link" data-nav-link>Our Games</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link" data-nav-link>Competitions</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link" data-nav-link
+                >For Schools & Parents</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#" class="btn has-before">
+            <span class="span">Contact</span>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="section hero has-bg-image"
+          id="home"
+          aria-label="home"
+          style="background-image: url('./images/myhero.svg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 section-title">
+                Learning Just Got A Lot More <span class="span h1-span">Fun</span>
+              </h1>
+
+              <p class="hero-text">
+                We blend play, curiosity, and creativity to help every child
+                learn smarter, faster, and happier
+              </p>
+
+              <div class="hero-cta">
+                <a href="#" class="btn browse-games-1 has-before">
+                  <span class="span">Browse Games</span>
+                </a>
+
+                <a href="#" class="btn browse-games-2 has-before">
+                  <span class="span">Our Competitions</span>
+                </a>
+              </div>
+            </div>
+
+            <figure class="hero-banner">
+              <div class="img-holder one" style="--width: 270; --height: 300">
+                <img
+                  src="./images/hero-banner-1.jpg"
+                  width="270"
+                  height="300"
+                  alt="hero banner"
+                  class="img-cover"
+                />
+              </div>
+
+              <div class="img-holder two" style="--width: 240; --height: 370">
+                <img
+                  src="./images/hero-banner-2.jpg"
+                  width="240"
+                  height="370"
+                  alt="hero banner"
+                  class="img-cover"
+                />
+              </div>
+
+              <img
+                src="./images/hero-shape-1.svg"
+                width="380"
+                height="190"
+                alt=""
+                class="shape hero-shape-1"
+              />
+
+              <img
+                src="./images/hero-shape-2.png"
+                width="622"
+                height="551"
+                alt=""
+                class="shape hero-shape-2"
+              />
+            </figure>
+          </div>
+        </section>
+
+
+        <!-- 
+  - #CATEGORY (updated with Swiper slider)
+-->
+
+        <section class="section category" aria-label="category">
+          <div class="container">
+            <p class="section-subtitle">Our Games</p>
+
+            <h2 class="h2 section-title">
+              Boost <span class="span"> Brain Power </span> with Fun.
+            </h2>
+
+            <p class="section-text">
+              Multiplication Master, CVC-Words, and Critical Thinking!
+            </p>
+
+            <!-- === Game Slider === -->
+            <div class="games-slider-body">
+              <style>
+                /* Importing Google fonts - Inter */
+                @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+                * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                  font-family: "Inter", sans-serif;
+                }
+
+                .games-slider-body {
+                  width: 100%;
+                  min-height: 100vh;
+                  background: #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 40px 0;
+                }
+
+                .games-slider-body.section {
+                  padding-block: 40px 0; /* less space above, no space below */
+                  margin-bottom: 0; /* remove any inherited gap */
+                }
+
+                .wrapper {
+                  width: 100%;
+                  max-width: 1100px;
+                }
+
+                .swiper {
+                  width: 100%;
+                  padding: 50px 0;
+                }
+
+                .swiper-slide {
+                  background: #fff;
+                  border-radius: 16px;
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  transition: transform 0.3s ease;
+                }
+
+                .swiper-slide:hover {
+                  transform: translateY(-5px);
+                }
+
+                .card {
+                  position: relative;
+                }
+
+                .card-image {
+                  width: 100%;
+                  height: 220px;
+                  object-fit: cover;
+                }
+
+                .card-content {
+                  padding: 20px;
+                }
+
+                .card-content h3 {
+                  font-size: 18px;
+                  font-weight: 700;
+                  margin-bottom: 8px;
+                }
+
+                .card-content p {
+                  font-size: 14px;
+                  color: #555;
+                  margin-bottom: 16px;
+                }
+
+                .user {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                }
+
+                .user-image {
+                  width: 35px;
+                  height: 35px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                }
+
+                .user-info h5 {
+                  font-size: 14px;
+                  margin-bottom: 2px;
+                  color: #222;
+                }
+
+                .user-info p {
+                  font-size: 12px;
+                  color: #888;
+                }
+
+                .swiper-pagination-bullet {
+                  background: #5e5df0;
+                }
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                  color: #5e5df0;
+                }
+
+                /* === Swiper bullet fill animation === */
+                .wrapper .swiper-pagination {
+                  position: relative;
+                  margin-top: 30px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                .wrapper .swiper-pagination-bullet {
+                  position: relative;
+                  width: 20px;
+                  height: 20px;
+                  background: linear-gradient(-90deg, #5e5df0, #ffffff);
+                  border: 2px solid #0065f8;
+                  opacity: 1;
+                  margin: 0 6px !important;
+                }
+
+                .wrapper .swiper-pagination-bullet::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: #5e5df0;
+                  transform: scaleX(0);
+                  transform-origin: left center;
+                  border-radius: 50%;
+                }
+
+                .wrapper .swiper-pagination-bullet-active::before {
+                  animation: autoplay-loading 2.5s linear forwards;
+                }
+
+                .container:hover
+                  .wrapper
+                  .swiper-pagination-bullet-active::before {
+                  animation-play-state: paused;
+                }
+
+                @keyframes autoplay-loading {
+                  100% {
+                    transform: scaleX(1);
+                  }
+                }
+              </style>
+
+              <div class="wrapper">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <img src="./images/multiplication-master.jpg" class="card-image" />
+                        <div class="card-content">
+                          <h3>Multiplication Master</h3>
+                          <p>
+                            Sharpen your multiplication skills through fun
+                            gameplay!
+                          </p>
+                          <div class="user">
+                            <img src="images/user-1.jpg" class="user-image" />
+                            <div class="user-info">
+                              <h5>Brain Booster</h5>
+                              <p>Logic • Math</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <img src="./images/multiplication-master.jpg" class="card-image" />
+                        <div class="card-content">
+                          <h3>CVC Word Builder</h3>
+                          <p>
+                            Match letters to form meaningful 3-letter words!
+                          </p>
+                          <div class="user">
+                            <img src="images/user-2.jpg" class="user-image" />
+                            <div class="user-info">
+                              <h5>Phonics Fun</h5>
+                              <p>Reading • Vocabulary</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <img src="./images/multiplication-master.jpg" class="card-image" />
+                        <div class="card-content">
+                          <h3>Critical Thinking Quest</h3>
+                          <p>
+                            Challenge your mind with puzzles and logical quests!
+                          </p>
+                          <div class="user">
+                            <img src="images/user-3.jpg" class="user-image" />
+                            <div class="user-info">
+                              <h5>Logic Lab</h5>
+                              <p>Puzzle • Strategy</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <img src="./images/multiplication-master.jpg" class="card-image" />
+                        <div class="card-content">
+                          <h3>Speed Math Challenge</h3>
+                          <p>
+                            Boost accuracy and speed in quick-fire math rounds!
+                          </p>
+                          <div class="user">
+                            <img src="images/user-4.jpg" class="user-image" />
+                            <div class="user-info">
+                              <h5>Brain Sprint</h5>
+                              <p>Speed • Accuracy</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <img src="./images/multiplication-master.jpg" class="card-image" />
+                        <div class="card-content">
+                          <h3>Memory Master</h3>
+                          <p>
+                            Train your short-term memory with fun card matching!
+                          </p>
+                          <div class="user">
+                            <img src="images/user-5.jpg" class="user-image" />
+                            <div class="user-info">
+                              <h5>Mind Sharpener</h5>
+                              <p>Memory • Focus</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+
+              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+              <script>
+                const swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  loop: true,
+                  autoplay: {
+                    delay: 2500, // time between slides (in ms)
+                    disableOnInteraction: false, // keep autoplay after user clicks or drags
+                  },
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                  breakpoints: {
+                    0: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                  },
+                });
+              </script>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <figure class="about-banner">
+              <div class="img-holder" style="--width: 520; --height: 370">
+                <img
+                  src="./images/about-banner.jpg"
+                  width="520"
+                  height="370"
+                  loading="lazy"
+                  alt="about banner"
+                  class="img-cover"
+                />
+              </div>
+
+              <img
+                src="./images/about-shape-1.svg"
+                width="360"
+                height="420"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-1"
+              />
+
+              <img
+                src="./images/about-shape-2.svg"
+                width="371"
+                height="220"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-2"
+              />
+
+              <img
+                src="./images/about-shape-3.png"
+                width="722"
+                height="528"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-3"
+              />
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle">About Us</p>
+
+              <h2 class="h2 section-title">
+                Where Young Minds Grow Through
+                <span class="span">Fun Cognitive Training</span>
+              </h2>
+
+              <p class="section-text">
+                At Child Brain Development Academy, we ignite the full potential
+                of every child through fun, brain-boosting programs that enhance
+                memory, focus, logic, and problem-solving — preparing them for
+                lifelong success.
+              </p>
+
+              <ul class="about-list">
+                <li class="about-item">
+                  <ion-icon
+                    name="checkmark-done-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                  <span class="span">Expert Cognitive Coaches</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon
+                    name="checkmark-done-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                  <span class="span">Interactive Brain-Training Programs</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon
+                    name="checkmark-done-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                  <span class="span">Personalized Learning Experience</span>
+                </li>
+              </ul>
+
+              <img
+                src="./images/about-shape-4.svg"
+                width="100"
+                height="100"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-4"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- VIDEO -->
+        <section
+          class="video has-bg-image"
+          aria-label="video"
+          style="background-image: url('./assets/images/my-video-bg.png')"
+        >
+          <div class="container">
+            <div class="video-card">
+              <div
+                class="video-banner img-holder has-after"
+                style="--width: ; --height: "
+              >
+                <img
+                  src="./images/video-banner.jpg"
+                  width="970"
+                  height="550"
+                  loading="lazy"
+                  alt="video banner"
+                  class="img-cover"
+                />
+
+                <button class="play-btn" aria-label="play video">
+                  <ion-icon name="play" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+              <img
+                src="./images/video-shape-1.png"
+                width="1089"
+                height="605"
+                loading="lazy"
+                alt=""
+                class="shape video-shape-1"
+              />
+
+              <img
+                src="./images/video-shape-2.png"
+                width="158"
+                height="174"
+                loading="lazy"
+                alt=""
+                class="shape video-shape-2"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #STATE
+      -->
+
+        <section class="section stats" aria-label="stats">
+          <div class="container">
+            <ul class="grid-list">
+              <li>
+                <div class="stats-card" style="--color: 170, 75%, 41%">
+                  <h3 class="card-title">530</h3>
+
+                  <p class="card-text">Students Enrolled</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card" style="--color: 351, 83%, 61%">
+                  <h3 class="card-title">51</h3>
+
+                  <p class="card-text">Class Completed</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card" style="--color: 260, 100%, 67%">
+                  <h3 class="card-title">100%</h3>
+
+                  <p class="card-text">Satisfaction Rate</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="stats-card" style="--color: 42, 94%, 55%">
+                  <h3 class="card-title">30+</h3>
+
+                  <p class="card-text">Top Instructors</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer"
+      style="background-image: url('./images/footer-bg.png')"
+    >
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="./images/logo-option.svg"
+                width="162"
+                height="50"
+                alt="EduWeb logo"
+              />
+            </a>
+
+            <p class="footer-brand-text">
+             Child Brain Development Academy (CBDA) — where play powers smart, creative minds.
+            </p>
+
+            <div class="wrapper">
+              <span class="span">Add:</span>
+
+              <address class="address">70-80 Upper St Norwich NR2</address>
+            </div>
+
+            <div class="wrapper">
+              <span class="span">Call:</span>
+
+              <a href="tel:+233555293084" class="footer-link"
+                >+233 555 293 084</a
+              >
+            </div>
+
+            <div class="wrapper">
+              <span class="span">Email:</span>
+
+              <a href="mailto:info@childbraindevelopmentacademy.com" class="footer-link"
+                >info@childbraindevelopmentacademy.com</a
+              >
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Instructors</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Events</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Instructor Profile</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Gallery</a>
+            </li>
+
+           
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Contacts</p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">Copyright 2025 - All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back top top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./script.js" defer></script>
+  </body>
+</html>
