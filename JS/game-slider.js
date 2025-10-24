@@ -5,7 +5,7 @@ const swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   loop: true,
   autoplay: {
-    delay: 2500, // time between slides (in ms)
+    delay: 3500, // time between slides (in ms)
     disableOnInteraction: false, // keep autoplay after user clicks or drags
   },
   pagination: {

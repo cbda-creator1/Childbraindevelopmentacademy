@@ -132,7 +132,7 @@
 }
 
 .wrapper .swiper-pagination-bullet-active::before {
-  animation: autoplay-loading 2.5s linear forwards;
+  animation: autoplay-loading 3.5s linear forwards;
 }
 
 .container:hover .wrapper .swiper-pagination-bullet-active::before {
