@@ -1,0 +1,146 @@
+/* Importing Google fonts - Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.games-slider-body {
+  width: 100%;
+  min-height: auto;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-slider-body.section {
+  padding-block: 40px 0; /* less space above, no space below */
+  margin-bottom: 0; /* remove any inherited gap */
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.swiper {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.swiper-slide {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-5px);
+}
+
+.card {
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info h5 {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #222;
+}
+
+.user-info p {
+  font-size: 12px;
+  color: #888;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #5e5df0;
+}
+
+/* === Swiper bullet fill animation === */
+.wrapper .swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .swiper-pagination-bullet {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #0065f8;
+  opacity: 1;
+  margin: 0 6px !important;
+}
+
+.wrapper .swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #5e5df0;
+  transform: scaleX(0);
+  transform-origin: left center;
+  border-radius: 50%;
+}
+
+.wrapper .swiper-pagination-bullet-active::before {
+  animation: autoplay-loading 2.5s linear forwards;
+}
+
+.container:hover .wrapper .swiper-pagination-bullet-active::before {
+  animation-play-state: paused;
+}
+
+@keyframes autoplay-loading {
+  100% {
+    transform: scaleX(1);
+  }
+}
